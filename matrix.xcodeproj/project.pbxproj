@@ -18,6 +18,8 @@
 		CF05929F1BBCC6CA0066A7B6 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF05929E1BBCC6CA0066A7B6 /* libstdc++.tbd */; };
 		CF0592A51BBCCF3C0066A7B6 /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0592A41BBCCF3C0066A7B6 /* MatrixViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CF0592A71BBCD00C0066A7B6 /* MatrixMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0592A61BBCD00C0066A7B6 /* MatrixMenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CF55EA6F1BBE0AE2003E2C0D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF55EA6E1BBE0AE2003E2C0D /* Localizable.strings */; settings = {ASSET_TAGS = (); }; };
+		CF55EA711BBE1054003E2C0D /* ShowHowCameraWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF55EA701BBE1054003E2C0D /* ShowHowCameraWorksViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E3F2F95662F7D4A46BFA3ADA /* libPods-matrix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D28DD0CAFD7E3C278805A862 /* libPods-matrix.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		CF05929E1BBCC6CA0066A7B6 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		CF0592A41BBCCF3C0066A7B6 /* MatrixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixViewController.swift; sourceTree = "<group>"; };
 		CF0592A61BBCD00C0066A7B6 /* MatrixMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMenuViewController.swift; sourceTree = "<group>"; };
+		CF55EA6E1BBE0AE2003E2C0D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CF55EA701BBE1054003E2C0D /* ShowHowCameraWorksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowHowCameraWorksViewController.swift; sourceTree = "<group>"; };
 		D28DD0CAFD7E3C278805A862 /* libPods-matrix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-matrix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,7 +121,9 @@
 				CF05926F1BBCC6380066A7B6 /* ViewController.swift */,
 				CF0592A41BBCCF3C0066A7B6 /* MatrixViewController.swift */,
 				CF0592A61BBCD00C0066A7B6 /* MatrixMenuViewController.swift */,
+				CF55EA701BBE1054003E2C0D /* ShowHowCameraWorksViewController.swift */,
 				CF0592711BBCC6380066A7B6 /* Main.storyboard */,
+				CF55EA6E1BBE0AE2003E2C0D /* Localizable.strings */,
 				CF0592771BBCC6380066A7B6 /* Assets.xcassets */,
 				CF0592791BBCC6380066A7B6 /* LaunchScreen.storyboard */,
 				CF05927C1BBCC6380066A7B6 /* Info.plist */,
@@ -269,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF05927B1BBCC6380066A7B6 /* LaunchScreen.storyboard in Resources */,
+				CF55EA6F1BBE0AE2003E2C0D /* Localizable.strings in Resources */,
 				CF0592781BBCC6380066A7B6 /* Assets.xcassets in Resources */,
 				CF0592731BBCC6380066A7B6 /* Main.storyboard in Resources */,
 			);
@@ -328,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF55EA711BBE1054003E2C0D /* ShowHowCameraWorksViewController.swift in Sources */,
 				CF0592701BBCC6380066A7B6 /* ViewController.swift in Sources */,
 				CF0592A51BBCCF3C0066A7B6 /* MatrixViewController.swift in Sources */,
 				CF0592A71BBCD00C0066A7B6 /* MatrixMenuViewController.swift in Sources */,

@@ -17,16 +17,22 @@ class MatrixMenuViewController: UIViewController, UIPageViewControllerDataSource
         super.viewDidLoad()
          matrixCards = [1,2,3,4]
         
-        initPageViewControoler()
+        initPageViewController()
     }
 
     
-    func initPageViewControoler(){
+    func initPageViewController(){
         self.pageViewController = self.storyboard!.instantiateViewControllerWithIdentifier("pageViewController") as? UIPageViewController
         self.pageViewController?.dataSource=self
         
-        let array = [createMatrixViewControllerAtIndex(0)]
+        let array = [createMatrixViewControllerAtIndex(0)!]
         self.pageViewController?.setViewControllers(array, direction: .Forward, animated: false, completion: nil)
+
+
+        var viewBindingsDict = [String: AnyObject]()
+        viewBindingsDict["pageView"] =  self.pageViewController
+        
+       // self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[pageView]|", options: [], metrics: nil, views: viewBindingsDict))
 
         self.addChildViewController(self.pageViewController!)
         self.view.addSubview(self.pageViewController!.view)
@@ -55,14 +61,17 @@ class MatrixMenuViewController: UIViewController, UIPageViewControllerDataSource
         if (matrixViewController?.index == nil || matrixViewController?.index==0) {
             return nil
         }
-        return createMatrixViewControllerAtIndex(matrixViewController!.index!+1)
+        return createMatrixViewControllerAtIndex(matrixViewController!.index!-1)
         
     }
     
-    func createMatrixViewControllerAtIndex(index:Int) -> UIViewController{
+    func createMatrixViewControllerAtIndex(index:Int) -> UIViewController?{
+        if (index < 0 || index >= matrixCards.count){
+            return nil
+        }
         let pageViewController = self.storyboard!.instantiateViewControllerWithIdentifier("matrixViewController") as? MatrixViewController
         
-        pageViewController?.index = 0
+        pageViewController?.index = index
         return pageViewController!
     }
     
